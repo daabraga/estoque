@@ -19,8 +19,8 @@ class Migration(migrations.Migration):
                 ('ncm', models.CharField(max_length=8, verbose_name='NCM')),
                 ('produto', models.CharField(max_length=100, unique=True)),
                 ('preco', models.DecimalField(decimal_places=2, max_digits=7, verbose_name='preço')),
-                ('estoque', models.IntegerField(verbose_name='estoque atual')),
-                ('estoque_minimo', models.PositiveIntegerField(default=0, verbose_name='estoque mínimo')),
+                ('projeto', models.IntegerField(verbose_name='projeto atual')),
+                ('estoque_minimo', models.PositiveIntegerField(default=0, verbose_name='projeto mínimo')),
             ],
             options={
                 'ordering': ('produto',),
