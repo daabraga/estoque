@@ -11,5 +11,5 @@ class Produto(models.Model):
     class Meta:
         ordering=('produto'),
 
-    def _str_(self):
+    def __str__(self):
         return self.produto
