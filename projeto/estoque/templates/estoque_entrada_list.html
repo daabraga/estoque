@@ -28,7 +28,7 @@
             {% for object in object_list %}
                 <tr>
                     <td>
-                        <a href="">{{ object }}</a>
+                        <a href="{% url 'estoque:estoque_entrada_detail' %}">{{ object }}</a>
                     </td>
                     <td>{{ object.nf.formated }}</td>
                     <td>{{ object.created }}</td>
