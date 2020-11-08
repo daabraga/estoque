@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="text/css" href="http://html5-training-in-hyderabad.blogspot.com/favicon.ico">
-    <title>Hello, world!</title>
+    <title>Estoque</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Front awesome-->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="{%  static  'css/index.css'  %}">
+
 
     {% block css %}{% endblock css %}
 
@@ -32,5 +35,4 @@
 
     {% block js %}{% endblock js %}
   </body>
-    }
 </html>
