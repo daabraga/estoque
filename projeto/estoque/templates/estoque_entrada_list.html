@@ -5,7 +5,7 @@
 
 <h2> Estoque Entrada
     <span class="pull-right">
-        <a href="">
+        <a href="{% url 'estoque:estoque_entrada_add' %}">
             <button class="btn btn-primary">
                 <span class="fa fa-plus"></span>
                 Adicionar
@@ -28,7 +28,7 @@
             {% for object in object_list %}
                 <tr>
                     <td>
-                        <a href="{% url 'estoque:estoque_entrada_detail' %}">{{ object }}</a>
+                        <a href="{% url 'estoque:estoque_entrada_detail' pk=object.pk %}">{{ object }}</a>
                     </td>
                     <td>{{ object.nf.formated }}</td>
                     <td>{{ object.created }}</td>
