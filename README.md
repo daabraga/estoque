@@ -10,15 +10,14 @@ cd estoque
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python contrib/env_gen.py
-python manage.py migrate
+python3 contrib/env_gen.py
+python3 manage.py migrate
+python3 manage.py createsuperuser
+python3 manage.py runserver
+
 
 ## Links
 
-Python decouple: https://github.com/henriquebastos/python-decouple
+[Python decouple] https://github.com/henriquebastos/python-decouple
 
 https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html
-
-python manage.py migrate --run-syncdb
-
-python manage.py createsuperuser
